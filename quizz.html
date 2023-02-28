@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="author" content="Afonso Costa">
+    <meta name="description" content="Website sobre Sintra">
+    <meta name="keywords" content="Sintra">
+</head>
+
+<body>
+
+    <h3>Quizz</h3>
+    <p>
+        Nesta página fará uma questionário para testar os seus conhecimentos
+        sobre Sintra.
+    </p>
+    <form action="mailto:afonsoccosta97@gmail.com" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Quizz sobre Sintra</legend>
+            <fieldset>
+                <legend>Info</legend>
+                <p>Nome: <input type="text" name="nome" placeholder="João" autocomplete="on" autofocus required></p>
+                <p>Apelido: <input type="text" name="apelido" placeholder="Silva" required></p>
+                <p>email: <input type="email" name="email" placeholder="joaosilva@hotmail.com" required></p>
+                <fieldset>
+                    <legend>Perguntas</legend>
+                    <div>
+                        <label for="jaFoi">Já foi a Sintra?</label><br>
+                        <input type="text" id="jaFoi" name="jaFoi" size="5" maxlength="3">
+                    </div>
+                    <div>
+                        <p>Que palácio se encontra em Sintra?</p>
+                        <input type="radio" name="palacio" id="brejoeira" value="brejoeira">
+                        <label for="brejoeira">Brejoeira</label><br>
+                        <input type="radio" name="palacio" id="pena" value="pena">
+                        <label for="pena">Pena</label><br>
+                        <input type="radio" name="palacio" id="raio" value="raio">
+                        <label for="raio">Raio</label><br>
+                    </div>
+                    <div>
+                        <p>Que doces regionais são de Sintra?</p>
+                        <input type="radio" id="travesseiro" name="travesseiro">
+                        <label for="travesseiro">Travesseiro</label>
+                        <input type="radio" name="queijada" id="queijada">
+                        <label for="queijada">Queijada</label>
+                        <input type="radio" id="ovosMoles" name="ovosMoles">
+                        <label for="ovosMoles">Ovos Moles</label>
+                        <input type="reset">
+                    </div>
+                    <div>
+                        <p>Em que data foi Sintra galardoada o estatuto de Património
+                            Mundial da UNESCO?
+                        </p>
+                        <input type="date" name="unescoDate" id="unescoDate">
+                    </div>
+                    <div>
+                        <p>Que cor é mais prevalente em Sintra?</p>
+                        <input type="color" id="color" for="color" value="#ff0000">
+                    </div>
+                    <div>
+                        <p>Quantos palácios há em Sintra?</p>
+                        <label for="nPalaces">Número de Palácios: </label>
+                        <input type="number" name="nPalaces" id="nPalaces">
+                    </div>
+                    <div>
+                        <p>A quantos quilômetros fica Lisboa de Sintra?</p>
+                        <label for="kmToLisbon">Quilômetros (entre 0 e 50):</label>
+                        <input type="range" id="kmToLisbon" name="kmToLisbon" min="0" max="50">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="nTimesWentToSintra">Quantas vezes foi a Sintra?</label>
+                        <select name="nTimesWentToSintra" id="nTimesWentToSintra">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value=">3">>3</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Que palácio em Sintra é o mais bonito?</p>
+                        <input list="palaces" name="prettiestPalace">
+                        <datalist id="palaces">
+                            <option value="Pena"></option>
+                            <option value="Monserrate"></option>
+                            <option value="Seteais"></option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div>
+                        Tem fotos de Sintra que quer partilhar? <br>
+                        <label for="photos">Insira aqui:</label>
+                        <input type="file" name="photos" id="photos" multiple>
+                    </div>
+                    <br>
+                    <div>
+                        Insira a sua opinião sobre este quizz: <br>
+                        <textarea name="opinion" id="opinion" cols="80" rows="10">
+                                Na minha opinião...
+                            </textarea>
+                    </div>
+                    <input type="image" src="images/submit.png" alt="Enviar" width="48">
+                </fieldset>
+            </fieldset>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
