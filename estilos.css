@@ -1,0 +1,28 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #9A9C8E;
+}
+
+.fieldsetPersonal {
+    background-color: aliceblue;
+}
+
+.fieldsetQuizz {
+    background-color: antiquewhite;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited{
+    color: greenyellow;
+}
+
+a:active {
+    color: aqua;
+}
+
+.menuIndex:hover:before{
+    content: ;
+}

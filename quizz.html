@@ -7,10 +7,20 @@
     <meta name="author" content="Afonso Costa">
     <meta name="description" content="Website sobre Sintra">
     <meta name="keywords" content="Sintra">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <nav>
+        <a href="index.html"> <b>Introdução</b></a>
+        <a href="local.html"> Localização</a>
+        <a href="multimedia.html"> Multimédia</a>
+        <a href="info.html"> Informações</a>
+        <a href="quizz.html"> Quizz</a>
+        <a href="html5-css.html"> HTML e CSS </a>
+    </nav>
     <h3>Quizz</h3>
     <p>
         Nesta página fará uma questionário para testar os seus conhecimentos
@@ -19,12 +29,12 @@
     <form action="mailto:afonsoccosta97@gmail.com" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Quizz sobre Sintra</legend>
-            <fieldset>
+            <fieldset class="fieldsetPersonal">
                 <legend>Info</legend>
                 <p>Nome: <input type="text" name="nome" placeholder="João" autocomplete="on" autofocus required></p>
                 <p>Apelido: <input type="text" name="apelido" placeholder="Silva" required></p>
                 <p>email: <input type="email" name="email" placeholder="joaosilva@hotmail.com" required></p>
-                <fieldset>
+                <fieldset class="fieldsetQuizz">
                     <legend>Perguntas</legend>
                     <div>
                         <label for="jaFoi">Já foi a Sintra?</label><br>
