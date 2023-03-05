@@ -11,18 +11,34 @@
     background-color: antiquewhite;
 }
 
-a:link {
+#navegação:link {
     color: blue;
 }
 
-a:visited{
+#navegaçãoa:visited {
     color: greenyellow;
 }
 
-a:active {
+#navegação:active {
     color: aqua;
 }
 
-.menuIndex:hover:before{
-    content: ;
+#navegação:hover {
+    color: lime;
+}
+
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    width: 25%;
+    text-align: center;
+}
+
+.intro:first-child {
+    font-weight: 300;
 }

@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt">
-<style>
-    table,
-    td {
-        border: 1px solid black;
-        border-collapse: collapse;
-    }
-
-    table {
-        width: 25%;
-        text-align: center;
-    }
-</style>
-
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -23,59 +10,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>Sintra</h1>
-    <img src="images/Sintra 2.jpeg" alt="Sintra">
+    <header>
+        <h1>Sintra</h1>
+        <img src="images/Sintra 2.jpeg" alt="Sintra">
+    </header>
     <br>
     <nav>
-        <a href="index.html"> <b>Introdução</b></a>
-        <a href="local.html"> Localização</a>
-        <a href="multimedia.html"> Multimédia</a>
-        <a href="info.html"> Informações</a>
-        <a href="quizz.html"> Quizz</a>
-        <a href="html5-css.html"> HTML e CSS </a>
+        <i class="material-icons">home</i><a href="index.html" id="navegação"> <b>Introdução</b></a>
+        <i class="material-icons">map</i><a href="local.html" id="navegação"> Localização</a>
+        <i class="material-icons">camera_alt</i><a href="multimedia.html"id="navegação"> Multimédia</a>
+        <i class="material-icons">info_outline</i><a href="info.html" id="navegação"> Informações</a>
+        <i class="material-icons">call_split</i><a href="quizz.html" id="navegação"> Quizz</a>
+        <i class="material-icons">web</i><a href="html5-css.html" id="navegação"> HTML e CSS </a>
     </nav>
-    <h2>Informações</h2>
-    <p style="width: 35%;">
-        Sintra é uma vila portuguesa no distrito e área metropolitana
-        de Lisboa, integrando a sua parte norte A Vila de Sintra
-        é notável pela presença da sua arquitetura romântica, resultando
-        na sua classificação enquanto Paisagem Cultural de Sintra,
-        Património Mundial da UNESCO e tem recusado ser elevada a categoria
-        de cidade, apesar de ser sede do segundo município mais populoso
-        em Portugal.
-    </p>
-    <table>
-        <th colspan="2">Informações sobre Sintra</th>
-        <tr>
-            <td>Distrito</td>
-            <td>Lisboa</td>
-        </tr>
-        <tr>
-            <td>Província</td>
-            <td>Estremadura</td>
-        </tr>
-        <tr>
-            <td>Área</td>
-            <td>319,23 km²</td>
+    <main>
+        <section>
+            <h2>Informações</h2>
+            <p style="width: 35%;">
+                Sintra é uma vila portuguesa no distrito e área metropolitana
+                de Lisboa, integrando a sua parte norte A Vila de Sintra
+                é notável pela presença da sua arquitetura romântica, resultando
+                na sua classificação enquanto Paisagem Cultural de Sintra,
+                Património Mundial da UNESCO e tem recusado ser elevada a categoria
+                de cidade, apesar de ser sede do segundo município mais populoso
+                em Portugal.
+            </p>
+        </section>
+        <table>
+            <th colspan="2">Informações sobre Sintra</th>
+            <tr>
+                <td>Distrito</td>
+                <td>Lisboa</td>
+            </tr>
+            <tr>
+                <td>Província</td>
+                <td>Estremadura</td>
+            </tr>
+            <tr>
+                <td>Área</td>
+                <td>319,23 km²</td>
 
-        </tr>
-        <tr>
-            <td>População</td>
-            <td>385 606 hab. (2021)</td>
-        </tr>
-        <tr>
-            <td>Fundação do Município</td>
-            <td>1154</td>
-        </tr>
-    </table>
+            </tr>
+            <tr>
+                <td rowspan="2">População e Fundação do Município</td>
+                <td>385 606 hab. (2021)</td>
+            </tr>
+            <tr>
+                
+                <td>1154</td>
+            </tr>
+        </table>
+    </main>
 </body>
-
-
-
-
-
-
 </html>
