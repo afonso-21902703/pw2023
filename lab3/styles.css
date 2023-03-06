@@ -1,0 +1,55 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.divViajar {
+    height: 50vh;
+    width: 100vw;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12;
+}
+
+.divImagem {
+    position: relative;
+
+}
+
+.imagem {
+    width: 100%;
+}
+
+.pSobreImagem {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.capitais {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 50px;
+}
+
+.capitais>div {
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #888888;
+    display: inline-block;
+}
+
+.capitais img {
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.capitais p {
+    padding-left: 10px;
+}
