@@ -9,16 +9,24 @@
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <h1>Laboratório 3</h1>
+        <nav>
+            <a href="#foto">Fotografia de natureza</a>
+            <a href="#capitais">Capitais Europeias</a>
+            <a href="#explore">Zona de experimentação</a>
+            <a href="#">Grid</a>
+        </nav>
+    </header>
     <main>
         <div class="divViajar">
             <p>Viajar</p>
         </div>
         <div class="divImagem">
-            <img class="imagem" src="https://source.unsplash.com/random/600×400/?nature" alt="nature">
+            <img class="imagem" id="foto" src="https://source.unsplash.com/random/600×400/?nature" alt="nature">
             <p class="pSobreImagem">Que bela foto</p>
         </div>
-        <div class="capitais">
+        <div class="capitais" id="capitais">
             <div>
                 <div><img src="images/bruxelas.avif" alt="Bruxelas"></div>
                 <div>
@@ -86,8 +94,23 @@
                 </div>
             </div>
         </div>
-        <div class="explore">
-
+        <div class="explore" id="explore">
+            <div class="circles">
+                <div class="square">
+                    <p class="labelInSquare">Vermelho</p>
+                </div>
+                <div class="square">
+                    <p class="labelInSquare">Vermelho</p>
+                </div>
+                <div class="square">
+                    <p class="labelInSquare">Vermelho</p>
+                </div>
+                <div class="square">
+                    <p class="labelInSquare">Vermelho</p>
+                </div>
+            </div>
+            <img src="images/londres.avif" alt="LondresClip" class="imgClip">
+            <img src="images/bruxelas.avif" alt="BruxelasZIndex" class="imgZ">
         </div>
     </main>
     <footer></footer>

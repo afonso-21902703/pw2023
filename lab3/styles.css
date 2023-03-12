@@ -5,6 +5,25 @@
     margin: 0;
 }
 
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    top: 0;
+    background-color: white;
+}
+
+nav>a {
+    text-decoration: none;
+    padding: 20px;
+}
+
+nav>a:hover{
+    color: gray;
+    font-weight: bold;
+}
+
 .divViajar {
     height: 50vh;
     width: 100vw;
@@ -37,12 +56,14 @@
     justify-content: space-around;
     align-items: space-around;
     padding: 50px;
+    background-color: bisque;
 }
 
 .capitais>div {
     border-radius: 20px;
     box-shadow: 5px 5px 15px #888888;
     display: inline-block;
+    background-color: aliceblue;
 }
 
 .capitais img {
@@ -52,4 +73,42 @@
 
 .capitais p {
     padding-left: 10px;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgClip {
+    position: relative;
+    clip-path: circle(50%);
+}
+
+.imgClip:hover {
+    visibility: hidden;
+}
+
+.imgZ {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 }
