@@ -5,21 +5,63 @@
     margin: 0;
 }
 
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 50px 2fr 100fr;
+    grid-template-columns: 20% 2fr 20%;
+    grid-template-areas:
+        'header header header'
+        'aside main article'
+        'footer footer footer'
+    ;
+}
+
 header {
+    grid-area: header;
     position: sticky;
     display: flex;
     justify-content: space-between;
-    height: 50px;
-    top: 0;
-    background-color: white;
+    background-image: url(images/sand.jpeg);
+    background-size: cover;
+    z-index: 1;
 }
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    grid-area: article;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+nav{}
 
 nav>a {
     text-decoration: none;
     padding: 20px;
 }
 
-nav>a:hover{
+nav>a:hover {
     color: gray;
     font-weight: bold;
 }
@@ -36,7 +78,6 @@ nav>a:hover{
 
 .divImagem {
     position: relative;
-
 }
 
 .imagem {
@@ -108,7 +149,11 @@ nav>a:hover{
 }
 
 .imgZ {
-    position: absolute;
+    position: relative;
+    top: 0px;
+    left: 0px;
     z-index: -1;
     width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
