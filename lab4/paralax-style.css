@@ -1,0 +1,76 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: black
+}
+
+body {
+    display: grid;
+    width: 100vw;
+    background-color: antiquewhite;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 5vh;
+    grid-template-areas:
+        'header header header'
+        'main main main'
+        'footer footer footer'
+    ;
+}
+
+header {
+    grid-area: header;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding-left: 10px;
+    background-color: aliceblue;
+}
+
+nav {
+    grid-area: nav;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 125px;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+
+div.parallax-image {
+    margin: 30px;
+    border: 3px solid black;
+}
+
+.parallax-image {
+    background-image: url(images/sintra-quinta-regaleira.jpeg);
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-no-parallax {
+    background-image: url(images/stars.avif);
+    min-height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
