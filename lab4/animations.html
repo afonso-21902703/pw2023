@@ -56,11 +56,12 @@
             padding-top: 5px;
             flex-direction: row;
             justify-content: flex-start;
+            align-items: center;
             background-color: red;
         }
 
         nav>div {
-            right: 40px;
+            left: 40px;
         }
 
         main {
@@ -308,16 +309,18 @@
         <h1>Laboratório 4</h1>
     </header>
     <nav>
-        <div class="dropdown-show">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: brown;">
-               Menu
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false" style="background-color: brown;">
+                Menu
+            </button>
+            <div class="dropdown-menu">
                 <a class="dropdown-item" href="paralax.html">Paralax</a>
                 <a class="dropdown-item" href="responsive-image.html">Imagens Responsivas</a>
                 <a class="dropdown-item" href="video-background.html">Vídeo Background</a>
                 <a class="dropdown-item" href="animations.html">Animações</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../lab3/index.html">Laboratório 3</a>
             </div>
         </div>
     </nav>
