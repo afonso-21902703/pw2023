@@ -27,7 +27,7 @@ header {
     top: 0;
 }
 
-header > h1 {
+header>h1 {
     padding-left: 10px;
     color: whitesmoke;
 }
@@ -54,8 +54,8 @@ nav {
 
 }
 
-nav.active > .menu,
-.menu:hover{
+nav.active>.menu,
+.menu:hover {
     color: black;
 }
 
@@ -73,10 +73,22 @@ nav.active > .menu,
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
-nav.active > .menu + .dropdown-menu {
+nav.active>.menu+.dropdown-menu {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+}
+
+.information-grid{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 2rem;
+}
+
+.dropdown-links{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 }
 
 main {
@@ -92,19 +104,32 @@ main {
     justify-content: center;
 }
 
-main > h1 {
+main>* {
     color: whitesmoke
+}
+
+aside {
+    position: relative;
+    display: flex;
+    height: 95vh;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 555px;
 }
 
 article {
     grid-area: article;
-    background-color: gray;
+    background-color: black;
 }
 
-article > h1 {
+
+article>h1 {
     position: relative;
     top: 20px;
     left: 20px;
+    color: whitesmoke;
 }
 
 .sobre-mim {
@@ -113,7 +138,10 @@ article > h1 {
     left: 20px;
     width: 80%;
     text-align: left;
+}
 
+.sobre-mim>* {
+    color: whitesmoke;
 }
 
 footer {
