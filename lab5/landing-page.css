@@ -14,7 +14,7 @@ body {
         'footer footer footer'
     ;
     grid-template-columns: auto;
-    grid-template-rows: 5vh 95vh 50vh 5vh;
+    grid-template-rows: 5vh 95vh 50vh;
 }
 
 header {
@@ -28,7 +28,7 @@ header {
 }
 
 header>h1 {
-    padding-left: 10px;
+    padding-left: 20px;
     color: whitesmoke;
 }
 
@@ -79,13 +79,13 @@ nav.active>.menu+.dropdown-menu {
     pointer-events: auto;
 }
 
-.information-grid{
+.information-grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
     gap: 2rem;
 }
 
-.dropdown-links{
+.dropdown-links {
     display: flex;
     flex-direction: column;
     gap: .25rem;
@@ -99,29 +99,36 @@ main {
     background-size: cover;
     background-attachment: fixed;
     /*opacity: 0.7;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    z-index: -1;
 }
 
 main>* {
     color: whitesmoke
 }
 
+main>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 aside {
-    position: relative;
+    position: absolute;
     display: flex;
     height: 95vh;
     width: 10vw;
     justify-content: center;
     align-items: center;
     text-align: center;
-    left: 555px;
+    right: 0px;
+    padding-right: 15px;
 }
 
 article {
     grid-area: article;
-    background-color: black;
+    background-color: #202F36;
 }
 
 

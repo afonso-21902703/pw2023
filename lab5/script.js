@@ -1,6 +1,7 @@
-document.addEventListener('click', e => {
+document.addEventListener('click', function (e) {
     const isDropdownButton = e.target.matches("[data-dropdown-button]")
-    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
+        return
 
     let currentDropdown
     if (isDropdownButton) {
@@ -9,7 +10,8 @@ document.addEventListener('click', e => {
     }
 
     document.querySelectorAll("[data-dropdown],active").forEach(dropdown => {
-        if (dropdown === currentDropdown) return
+        if (dropdown === currentDropdown)
+            return
         dropdown.classList.remove('active')
     })
 })
